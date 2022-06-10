@@ -1,5 +1,11 @@
 import React from 'react';
-
+import web1 from "../../../image/web1.jpg"
+import web2 from "../../../image/web2.png"
+import web3 from "../../../image/web3.jpg"
+import web4 from "../../../image/web4.png"
+import web5 from "../../../image/web5.png"
+import web6 from "../../../image/web6.png"
+import web7 from "../../../image/web7.PNG"
 const Collection = () => {
     return (
         <div>
@@ -19,29 +25,29 @@ const Collection = () => {
               <div class="flex items-center space-x-6 lg:space-x-8">
                 <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
                   <div class="w-44 h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg" alt="" class="w-full h-full object-center object-cover"/>
+                    <img src={web1} alt="" class="w-full h-full object-center object-cover"/>
                   </div>
                   <div class="w-44 h-64 rounded-lg overflow-hidden">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg" alt="" class="w-full h-full object-center object-cover"/>
-                  </div>
-                </div>
-                <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                  <div class="w-44 h-64 rounded-lg overflow-hidden">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg" alt="" class="w-full h-full object-center object-cover"/>
-                  </div>
-                  <div class="w-44 h-64 rounded-lg overflow-hidden">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg" alt="" class="w-full h-full object-center object-cover"/>
-                  </div>
-                  <div class="w-44 h-64 rounded-lg overflow-hidden">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg" alt="" class="w-full h-full object-center object-cover"/>
+                    <img src={web7} alt="" class="w-full h-full object-center object-cover"/>
                   </div>
                 </div>
                 <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
                   <div class="w-44 h-64 rounded-lg overflow-hidden">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg" alt="" class="w-full h-full object-center object-cover"/>
+                    <img src={web5} alt="" class="w-full h-full object-center object-cover"/>
                   </div>
                   <div class="w-44 h-64 rounded-lg overflow-hidden">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg" alt="" class="w-full h-full object-center object-cover"/>
+                    <img src={web2} alt="" class="w-full h-full object-center object-cover"/>
+                  </div>
+                  <div class="w-44 h-64 rounded-lg overflow-hidden">
+                    <img src={web3} alt="" class="w-full h-full object-center object-cover"/>
+                  </div>
+                </div>
+                <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
+                  <div class="w-44 h-64 rounded-lg overflow-hidden">
+                    <img src={web4} alt="" class="w-full h-full object-center object-cover"/>
+                  </div>
+                  <div class="w-44 h-64 rounded-lg overflow-hidden">
+                    <img src={web6} alt="" class="w-full h-full object-center object-cover"/>
                   </div>
                 </div>
               </div>
