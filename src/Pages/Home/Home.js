@@ -3,10 +3,13 @@ import "./Home.css";
 import ashik from "../../image/ashik.png";
 import Portfolio from "../Portfolio/Portfolio";
 import Collection from "./Collection/Collection";
+import Contact from "../Contact/Contact";
 import AnimatedText from "react-animated-text-content";
 import TypeAnimation from 'react-type-animation';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import { Link } from "react-router-dom";
+import resume  from './resume.pdf';
 AOS.init();
 
 const Home = () => {
@@ -16,7 +19,7 @@ const Home = () => {
         <div  class="hero-content flex-col lg:flex-row">
           <div class="avatar mx-5">
             <div class="w-100 rounded-full ring-[#4bffa5] ring-[20px] ring-offset-2">
-              <img src={ashik} />
+              <img src={ashik} alt="my pic" />
             </div>
           </div>
           <div>
@@ -56,9 +59,9 @@ const Home = () => {
               MD. ASHIKUR RAHMAN
             </AnimatedText>
 
-            <button class="btn uppercase btn-accent border-2 border-[#4bffa5] rounded-full my-3 drop-shadow-lg">
+            <a href={resume} download='resume'><button class="btn uppercase btn-accent border-2 border-[#4bffa5] rounded-full my-3 drop-shadow-lg">
               DOWNLOAD RESUME
-            </button>
+            </button> </a>
           </div>
         </div>
       </div>
@@ -67,8 +70,18 @@ const Home = () => {
      data-aos-easing="ease-in-sine"   data-aos-duration="1000">
       <Portfolio></Portfolio>
       </div>
+     <div data-aos="fade-up"
+     data-aos-offset="200"
+     data-aos-easing="ease-in-sine"   data-aos-duration="1000">
+       <Collection></Collection>
+     </div>
      
-      <Collection></Collection>
+      <div  data-aos="fade-up"
+     data-aos-offset="200"
+     data-aos-easing="ease-in-sine"   data-aos-duration="1000">
+         <Contact></Contact>
+      </div>
+     
     </div>
   );
 };
