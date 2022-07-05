@@ -51,7 +51,7 @@ const Home = () => {
               interval={0.09}
               duration={0.9}
               tag="p"
-              className="animated-paragraph text-5xl"
+              className="animated-paragraph text-5xl "
               includeWhiteSpaces
               threshold={0.1}
               rootMargin="20%"

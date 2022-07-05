@@ -21,8 +21,8 @@ const Contact = () => {
       <input {...register("lastName", { required: true })} placeholder="Last Name"  className="px-3 ml-3 my-3 h-10 rounded-md text-[#333] w-1/2 "/>
      </div>
       <input {...register("email", { required: true })} placeholder="Email" className="px-3 h-10 rounded-md text-[#333]"/>
-      <textarea {...register("message", { required: true })} placeholder="" className="p-3 my-3 h-24 text-[#333] rounded-md"></textarea>
-      <input type="submit" className="px-3 h-10 rounded-md" />
+      <textarea {...register("message", { required: true })} placeholder="Message" className="p-3 my-3 h-24 text-[#333] rounded-md"></textarea>
+      <input type="submit" className="px-3 h-10 rounded-md bg-[red] hover:bg-[#333] duration-300 hover:scale-[0.96]" />
     </form>
 
     </div>
