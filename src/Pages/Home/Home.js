@@ -10,16 +10,19 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { Link } from "react-router-dom";
 import resume  from './resume.pdf';
+import Website from "../Portfolio/Website/Website";
 AOS.init();
 
 const Home = () => {
   return (
     <div  className="">
-      <div class="hero min-h-screen bg-base-200 ">
+      <div class="hero min-h-screen ">
         <div  class="hero-content flex-col lg:flex-row">
           <div class="avatar mx-5">
-            <div class="w-100 rounded-full ring-[#4bffa5] ring-[20px] ring-offset-2">
+            <div class="w-100 rounded-full   ring-[#4bffa5] ring-[20px] ring-offset-2">
+            
               <img src={ashik} alt="my pic" />
+              
             </div>
           </div>
           <div>
@@ -51,15 +54,15 @@ const Home = () => {
               interval={0.09}
               duration={0.9}
               tag="p"
-              className="animated-paragraph text-5xl "
+              className="animated-paragraph text-[42px]"
               includeWhiteSpaces
               threshold={0.1}
               rootMargin="20%"
             >
               MD. ASHIKUR RAHMAN
             </AnimatedText>
-
-            <a href={resume} download='resume'><button class="btn uppercase btn-accent border-2 border-[#4bffa5] rounded-full my-3 drop-shadow-lg">
+            <AnimatedText className="animated-paragraph text-sm">I design and develop experiences that  make people's lives simple.</AnimatedText>
+            <a href={resume} download='resume'><button class="px-5 py-2 hover:bg-[#00f298] hover:text-[#333] uppercase border-2 border-[#4bffa5] rounded-full my-3 drop-shadow-lg">
               DOWNLOAD RESUME
             </button> </a>
           </div>
@@ -68,7 +71,7 @@ const Home = () => {
       <div data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"   data-aos-duration="1000">
-      <Portfolio></Portfolio>
+      <Website></Website>
       </div>
      <div data-aos="fade-up"
      data-aos-offset="200"
@@ -76,9 +79,7 @@ const Home = () => {
        <Collection></Collection>
      </div>
      
-      <div  data-aos="fade-up"
-     data-aos-offset="200"
-     data-aos-easing="ease-in-sine"   data-aos-duration="1000">
+      <div>
          <Contact></Contact>
       </div>
      

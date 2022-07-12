@@ -1,0 +1,5 @@
+.cover{
+    background-image:url(../../image/cover1.jpg);
+    background-size: cover;
+    height: 50vh;
+}

@@ -1,0 +1,20 @@
+
+.fonts{
+    font-family: 'roboto',sans-serif; 
+}
+.textColor{
+  
+	background: linear-gradient(to right, #00f298 0%,#01e4c6 20%);
+    background-clip: text;
+    font-weight: bold;
+	-webkit-text-fill-color: transparent;
+  
+}
+.buttonColor{
+    background: linear-gradient(to right, #00f298 0%, #02cfb4 100%);
+    
+}
+.buttonColor:hover{
+    background: linear-gradient(to right, #02cfb4  0%, #00f298 100%);
+
+}

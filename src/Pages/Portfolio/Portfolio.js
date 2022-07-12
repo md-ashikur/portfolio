@@ -1,68 +1,51 @@
-import React from 'react';
-
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Portfolio.css";
 
 const Portfolio = () => {
-    return (
-        <div>
-            
-<div class="bg-base-200 ">
-  <div 
-      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none">
-      <h2 class="text-2xl font-extrabold text-white">Collections</h2>
+  return (
+    <div>
+      <div className="hero cover bg-fixed ">
+        <div className="hero-overlay bg-opacity-60 "></div>
+      </div>
 
-      <div class="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
-        <div class="group relative">
-          <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
-            <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg" 
-            alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse,
-             and porcelain mug." class="w-full h-full object-center object-cover"/>
+      <div class="grid lg:grid-cols-2 place-items-center my-10">
+        <div className="bg-gradient-to-r from-[#00f298] via-[#02cfb4] to-[#02cfb4] rounded my-5">
+          <div class="hero">
+            <div class=" bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">WEBSITE</h1>
+                <p class="mb-5">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+              <Link to="/website"> <button class="btn btn-primary uppercase">EXPLORE</button></Link>
+              </div>
+            </div>
           </div>
-          <h3 class="mt-6 text-sm text-gray-500">
-            <a href="#">
-              <span class="absolute inset-0"></span>
-              Desk and Office
-            </a>
-          </h3>
-          <p class="text-base font-semibold text-white">Work from home accessories</p>
         </div>
-
-        <div class="group relative">
-          <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
-            <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg"
-             alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring,
-              and a houseplant." class="w-full h-full object-center object-cover"/>
+        {/* ==============================graphic============= */}
+        <div className="bg-[white] my-5 rounded">
+          <div class="hero" >
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">GRAPHIC</h1>
+                <p class="mb-5">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <Link to="/graphic"> <button class="btn btn-primary uppercase">EXPLORE</button></Link>
+              </div>
+            </div>
           </div>
-          <h3 class="mt-6 text-sm text-gray-500">
-            <a href="#">
-              <span class="absolute inset-0"></span>
-              Self-Improvement
-            </a>
-          </h3>
-          <p class="text-base font-semibold text-gray-900">Journals and note-taking</p>
-        </div>
-
-        <div class="group relative">
-          <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
-            <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg" alt="Collection of four insulated travel bottles on wooden shelf." class="w-full h-full object-center object-cover"/>
-          </div>
-          <h3 class="mt-6 text-sm text-gray-500">
-            <a href="#">
-              <span class="absolute inset-0"></span>
-              Travel
-            </a>
-          </h3>
-          <p class="text-base font-semibold text-gray-900">Daily commute essentials</p>
         </div>
       </div>
-      <button class="btn uppercase px-5 btn-accent border-2 border-[#4bffa5] rounded-full my-3 drop-shadow-lg">MORE</button>
     </div>
-  </div>
-</div>
-
-
-        </div>
-    );
+  );
 };
 
 export default Portfolio;
